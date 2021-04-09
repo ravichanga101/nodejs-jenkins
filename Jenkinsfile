@@ -4,7 +4,7 @@ node {
       checkout scm  
     }
      stage('Build docker Image'){
-      app = docker.build("automate/latest")
+      app = docker.build("smendiratta410/dockerdemo")
     }
      stage('Test Image'){
        app.inside {
